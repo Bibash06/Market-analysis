@@ -2,25 +2,16 @@
 Market Analysis in Dublin
 This data project has been used as a take-home assignment in the recruitment process for the data science positions at Airbnb.
 
-Assignment
+## Assignment Overview
 
-A new city manager for Airbnb has started in Dublin and wants to better understand:
-
-what guests are searching for in Dublin,
-which inquiries hosts tend to accept.
-Based on the findings the new city manager will try to boost the number and quality of hosts in Dublin to fit the demands from guests. The goal of this challenge is to analyze, understand, visualize, and communicate the demand / supply in the market. For example you may want to look at the breakdown of start date day of the week, or number of nights, or room type that is searched for, and how many hosts accepted the reservation. In particular, we are interested in:
-
-what the gaps are between guest demand and host supply that the new city manager could plug to increase the number of bookings in Dublin,
-what other data would be useful to have to deepen the analysis and understanding.
-Data Description
-
-There are 2 datasets
+This project explores the dynamics of the Airbnb market in Dublin, focusing on guest searches, host responses, and market trends. The objective is to gain valuable insights into demand, supply patterns, and potential market gaps. The project involves thorough data exploration, visualization, and communication of key findings.
+**There are 2 datasets**
 
 searches.tsv - Contains a row for each set of searches that a user does for Dublin
 contacts.tsv - Contains a row for every time that an assigned visitor makes an inquiry for a stay in a listing in Dublin
 searches dataset contains the following columns:
 
-ds - Date of the search
+**ds - Date of the search**
 id_user - Alphanumeric user_id
 ds_checkin - Date stamp of the check-in date of the search
 ds_checkout - Date stamp of the check-out date of the search
@@ -46,3 +37,24 @@ ds_checkin - Date stamp of the check-in date of the inquiry
 ds_checkout - Date stamp of the check-out date of the inquiry
 n_guests - The number of guests the inquiry is for
 n_messages - The total number of messages that were sent around this inquiry
+
+## Key Findings
+
+**Searches Dataset:**
+- High null values in 'neighborhood.'
+- Majority prefer 1 or 2 guests.
+- Positive skewness in numeric columns.
+- Searches mainly in October.
+- 14.25% have prices exceeding 600.
+- Room type data may need cleaning.
+- Top origin countries identified.
+**Contacts Dataset:**
+- Positive skewness, especially in guest count.
+- Majority have less than 8 guests.
+- Conversion rate considered.
+- Seasonal check-in patterns revealed.
+**Merged Datasets Analysis:**
+- Comparative analysis.
+- Price impact on acceptance visualized.
+- Price ranges classified.
+- Varying acceptance rates by country.
